@@ -1,0 +1,26 @@
+[
+    {
+        "category": "i7-9700K",
+        "img": "https://i.ebayimg.com/images/g/FMkAAOSwlRZe4sV0/s-l500.jpg",
+        "product": "intel i7 9th gen Processor",
+        "price": 369.99,
+        "url": "https://www.ebay.com/itm/Intel-Core-i7-9700K-3-6-GHz-Octa-Core-Processor-BX80684I79700K-Tested/114256650822?epid=10025613064&hash=item1a9a3a2246:g:FMkAAOSwlRZe4sV0",
+        "details": "3.6 GHz Octa-Core Processor"
+    },
+    {
+        "category": "i5-9400F",
+        "product": "intel i5 9th gen Processor",
+        "img": "//i5.walmartimages.com/asr/532ff33c-fcde-4ee4-97cc-6c68e789a8b2_1.34551d674edab4857e46f5b6010f6a72.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+        "price": 164.0,
+        "url": "https://www.walmart.com/ip/Intel-Core-i5-9400F-Hexa-core-6-Core-2-9GHz-Processor-Retail-Pack/944198509?athcpid=944198509&athpgid=athenaItemPage&athcgid=collection&athznid=653627041_collection&athieid=v1&athstid=CS020&athguid=e1c50c4b-349-172c900c336f26&athancid=null&athena=true",
+        "details": "2.9 GHz Hexa-core Processor"
+    },
+    {
+        "category": "i9-9900K",
+        "product": "intel i9 9th gen Processor",
+        "img": "https://i5.walmartimages.com/asr/01d4fa55-6e6d-417e-959d-ad87e1925dec_1.eb5f2547519e025a821b98e68a659c31.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+        "price": 499.0,
+        "url": "https://www.walmart.com/ip/Intel-Core-i9-9900K-Octa-core-8-Core-3-6GHz-Processor-Retail-Pack/248952912?athcpid=248952912&athpgid=athenaItemPage&athcgid=collection&athznid=653627041_collection&athieid=v1&athstid=CS020&athguid=fa5441de-007-172c8ca1d77631&athancid=null&athena=true",
+        "details": "3.6 GHz Octa-Core Processor"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "category": "GTX 1060",
+        "img": "https://i.ebayimg.com/images/g/FMkAAOSwlRZe4sV0/s-l500.jpg",
+        "product": "Nvidia GTX 1060",
+        "price": -1,
+        "url": "https://www.ebay.com/itm/EVGA-GeForce-GTX-1060-6gb-SSC-ASX-3-0-Gddr5-Gaming-Video-Graphics-Card/254603576412?_trkparms=ispr%3D1&hash=item3b478e445c%3Ag%3AxLMAAOSwFpBexnlR&enc=AQAFAAACYBaobrjLl8XobRIiIML1V4Imu%2Fn%2BzU5L90Z278x5ickkrDx%2B2NLp21dg6hHbHAkGMQ5kiEZA1n7L3RyeUEAZrfiq%2FghXoCrabYupF0K5aanDqL7mXo0Fjfg6%2Be%2F3K0jT%2FX7tluH7FaEgRl8D1J2zsDwUV5Piqonpy1gKmsgB7ULDz3mo2r4f2JeZArVWbK7DZyrBaAVuy4HWra1f8Xi8cU6Qarspm2zASXHJqxyt1XLS6iCcaVpSXInwfEfzVMfs9EgHhD8IhKbjPOG3X5SbYukFdtI%2B5Zv97pG9n8%2Fqf4lJFYOMDaBBC%2FjrB0zMArKz7DLYi71n6j1otOqkLgK4V0ntpvxjAOa%2FvPOJYGptv6vuCu7RV0MNnLq%2FOMHkpRSMloAiM3aLQPq2qHTO1kUMZA2oyIvcrJd20Ho6bj6LWnN02qOxgXkFuAtuWMrGcoarjl8WXi8r1oP3bgD%2BRBxyJXI34VxR%2B7FOR5WvS8s4qnrQpXLPxWfrQzGxvrju7m0rC%2BXAUq%2BURbeGml8qxXPqCYfGCqSFnqtRg31vr9HgLZG5145Hdo0wjDfai1qVvIlpa07aFXUvup8lecUHAdedMwF%2FEkXFwJxteTQfGxkaQhXvZ8KDolRqeJX799%2FFOky8NNhG4ileQvs9sSV8rxxhod1e616iD%2BjYSanJC0bAWfBhgCx9PcaiEnYrgBZg%2BpC8rsrqylfmHBHKBw7bCUEgiwflN8l9L7EQoAV59jmruAojcmiXzaWc6Lj%2FVsCIqhuhiRJ%2BMg7pn1xpvHr5J%2FfoEAA06J%2FrAZLcNHScaz9x5f14&checksum=2546035764127c7254b475e748a6b3f7cf6df723d714&LH_ItemCondition=1000",
+        "details": "3.6 GHz Octa-Core Processor"
+    },
+    {
+        "category": "RTX 2080Ti",
+        "product": "Nvidia RTX 2080Ti",
+        "img": "//i5.walmartimages.com/asr/532ff33c-fcde-4ee4-97cc-6c68e789a8b2_1.34551d674edab4857e46f5b6010f6a72.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+        "price": -1,
+        "url": "https://www.walmart.com/ip/Asus-TURBO-RTX2080TI-11G-GeForce-RTX-2080-Ti-Graphic-Card-11-GB-GDDR6-Dual-Slot-Space-Required/155361771",
+        "details": "2.9 GHz Hexa-core Processor"
+    },
+    {
+        "category": "Nvidia Tesla T4",
+        "product": "Nvidia Tesla T4",
+        "img": "https://i5.walmartimages.com/asr/01d4fa55-6e6d-417e-959d-ad87e1925dec_1.eb5f2547519e025a821b98e68a659c31.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+        "price": -1,
+        "url": "https://www.walmart.com/ip/NVIDIA-Tesla-T4-Graphic-Card-16-GB-GDDR6-Full-height-PC/824889250",
+        "details": "3.6 GHz Octa-Core Processor"
+    }
+]
