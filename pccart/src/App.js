@@ -7,7 +7,7 @@ import Mandatory from './Home.js';
 import Layout from './Layout';
 import Navigation from './Navigation';
 import ControlledCarousel from './Caro';
-
+import Idea from './idea';
 class App extends Component {
 
   render() {
@@ -20,6 +20,10 @@ class App extends Component {
           <BrowserRouter>
             <Route exact path="/" >
             <ControlledCarousel />
+            <Layout >
+              <h2 style={{marginTop: '10vh',textAlign:`center`,color:`#fff`,fontWeight:`bold`}}>Our Ideology</h2>
+              <Idea style={{color:`#fff`, fontSize:`2vh`}}/>
+            </Layout>
             </Route>
             <Route path="/find/processors"><Table index={0} style={{marginLeft: '10vh',marginRight: '10vh'}} /></Route>
             <Route path="/find/gpu"><Table index={1} style={{marginLeft: '10vh',marginRight: '10vh'}} /></Route>

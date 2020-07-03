@@ -43,10 +43,11 @@ with open('./gpu.json','r+') as f:
         # print(type(processors[key]["price"]))
         for company,urls in gpu[key]["url"].items():
             cc,dd = ob.fetch_cost(company,urls)
-            print(dd)
-            print(cc)
+            # print(dd)
+            # print(cc)
             if (gpu[key]["price"] == 0 or gpu[key]["price"] > cc)  and (cc != -1):
                 gpu[key]["price"] = cc
+                data[index]['img'] = dd
                 data[index]['url'] = urls
                 print(company,"had better price")
         gpu[key]["timestamp"] = time.time()

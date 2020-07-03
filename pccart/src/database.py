@@ -51,7 +51,7 @@ gpu = {
     "Nvidia Tesla T4" : {
         "url" : {
             "walmart" : "https://www.walmart.com/ip/NVIDIA-Tesla-T4-Graphic-Card-16-GB-GDDR6-Full-height-PC/824889250",
-            "ebay" : "https://www.ebay.com/itm/NEW-HPE-R0W29C-Tesla-T4-Graphic-Card-16-GB-GDDR6-FACTORY-SEALED/124224350902?epid=20039003141&hash=item1cec592ab6:g:Ev0AAOSwuDte59gV"
+            "ebay" : "https://www.ebay.com/itm/NVIDIA-Tesla-T4-GPU-16GB-GDDR6-Accelerator-Card/153481379664?epid=23028319612&hash=item23bc33ff50:g:HtcAAOSwpUVc07Su"
         },
         "price" : 0,
         "timestamp" : 0

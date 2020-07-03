@@ -1,7 +1,7 @@
 [
     {
         "category": "GTX 1060",
-        "img": "https://i.ebayimg.com/images/g/FMkAAOSwlRZe4sV0/s-l500.jpg",
+        "img": "//i5.walmartimages.com/asr/d287b1a5-6a9a-40a0-b18e-85793063b922.600f64c6f5c014e40a118a7cf0b566f5.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
         "product": "Nvidia GTX 1060",
         "price": 239.0,
         "url": "https://www.walmart.com/ip/EVGA-GeForce-GTX-1660-SC-ULTRA-GAMING-06G-P4-1067-KR-6GB-GDDR5-Dual-Fan-Metal-Backplate/152237074",
@@ -10,7 +10,7 @@
     {
         "category": "RTX 2080Ti",
         "product": "Nvidia RTX 2080Ti",
-        "img": "//i5.walmartimages.com/asr/532ff33c-fcde-4ee4-97cc-6c68e789a8b2_1.34551d674edab4857e46f5b6010f6a72.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+        "img": "https://i.ebayimg.com/images/g/2ikAAOSwUAVeTI6F/s-l300.jpg",
         "price": 0,
         "url": "https://www.walmart.com/ip/Asus-TURBO-RTX2080TI-11G-GeForce-RTX-2080-Ti-Graphic-Card-11-GB-GDDR6-Dual-Slot-Space-Required/155361771",
         "details": "2.9 GHz Hexa-core Processor"
@@ -18,7 +18,7 @@
     {
         "category": "Nvidia Tesla T4",
         "product": "Nvidia Tesla T4",
-        "img": "https://i5.walmartimages.com/asr/01d4fa55-6e6d-417e-959d-ad87e1925dec_1.eb5f2547519e025a821b98e68a659c31.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+        "img": "https://i.ebayimg.com/images/g/Ev0AAOSwuDte59gV/s-l300.jpg",
         "price": 0,
         "url": "https://www.walmart.com/ip/NVIDIA-Tesla-T4-Graphic-Card-16-GB-GDDR6-Full-height-PC/824889250",
         "details": "3.6 GHz Octa-Core Processor"

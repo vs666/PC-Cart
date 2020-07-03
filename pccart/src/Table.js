@@ -33,7 +33,7 @@ class Table extends Component {
                 <div key={ele.id} className="col-12 col-md-3 m-2" style={{ float: 'left'}}>
                     <Card style={{backgroundColor:'#114'}}>
 
-                        <CardImg style={{width:'46vh',height:'40vh'}} src={ele.img} alt={ele.category} />
+                        <CardImg style={{width:'auto',height:'40vh'}} src={ele.img} alt={ele.category} />
 
                         <CardTitle style={{fontSize: 3 + 'vh' ,color:'#ffd'}} >{ele.product}</CardTitle>
                         <CardText style={{ marginLeft: '2vh',color:'#ffd' }}>
