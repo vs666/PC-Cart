@@ -9,7 +9,7 @@ code_index.push(require('./monitor.json'))
 class Table extends Component {
     constructor(props) {
         super(props);
-        console.log("HAHA "+parseInt(props.index))
+        console.log("HAHA " + parseInt(props.index))
         console.log(code_index[props.index])
         this.state = {
             process: code_index[parseInt(props.index)]
@@ -21,7 +21,7 @@ class Table extends Component {
             return;
         }
         else {
-            cart.push({ id: element.id, price: element.price, name: element.product,img:element.img })
+            cart.push({ id: element.id, price: element.price, name: element.product, img: element.img })
             console.log("Appended Cart : ", cart);
             alert("Added Item to cart");
         }
@@ -29,17 +29,26 @@ class Table extends Component {
 
     render() {
         const menu = this.state.process.map((ele) => {
-            return <div key={ele.id} className="col-12 col-md-2 m-1">
-                <Card >
-                    <CardImg width="100%" src={ele.img} alt={ele.category} />
-                    <CardTitle style={{ fontSize: 3 + 'vh' }} onClick={() => { this.addToCart(ele) }}>{ele.product}</CardTitle>
-                    <p>{ele.details}</p>
-                    <p><code>US$ {ele.price}</code> <a href={ele.url}>Buy Now</a> </p>
-                </Card>
-            </div>
+            return (
+                <div key={ele.id} className="col-12 col-md-3 m-2" style={{ float: 'left'}}>
+                    <Card style={{backgroundColor:'#114'}}>
+
+                        <CardImg style={{width:'46vh',height:'40vh'}} src={ele.img} alt={ele.category} />
+
+                        <CardTitle style={{fontSize: 3 + 'vh' ,color:'#ffd'}} >{ele.product}</CardTitle>
+                        <CardText style={{ marginLeft: '2vh',color:'#ffd' }}>
+                            <p>{ele.details}</p>
+                            <p style={{fontSize:'3vh'}}><code>US$ {ele.price}</code></p>
+                            <p><a href={ele.url} style={{color:'#fff'}}>Buy Now</a>
+                                <button onClick={() => { this.addToCart(ele) }} style={{ marginLeft: '2vh' }}> Add to cart</button>
+                            </p>
+                        </CardText>
+                    </Card>
+                </div>)
+                ;
         });
         return (
-            <div className="left-align container-fluid">
+            <div className="left-align container-fluid" style={{marginLeft:'10%',marginRight:'10%'}}>
                 <div >
                     {menu}
                 </div>
