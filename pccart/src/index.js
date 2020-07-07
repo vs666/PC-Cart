@@ -9,7 +9,7 @@ import App from './App';
 // const bp = require('body-parser');
 // const router = express.Router();
 // const app = express();
-// // const data1 = require('./database_main.json')
+// const data1 = require('./database_main.json')
 // var urlencodedParser = bp.urlencoded({ extended: false });
 
 // import * as serviceWorker from './serviceWorker';
@@ -18,6 +18,8 @@ import App from './App';
 //   res.send(renderToString(f1(),'text/html'));
 // });
 
+
+// ReactDOM.hydrate(<App />, document.getElementById('root'));
 
 function f1() {
   return (
@@ -29,7 +31,8 @@ function f1() {
 
 }
 
-f1();  // If you want your app to work offline and load faster, you can change
+f1();
+  // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 // serviceWorker.unregister();

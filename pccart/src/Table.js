@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 import cart from './CData';
+const fs = require('fs');
 const code_index = []
 code_index.push(require('./processors.json'))
 code_index.push(require('./gpu.json'))
@@ -15,40 +17,48 @@ class Table extends Component {
             process: code_index[parseInt(props.index)]
         }
     }
+
     addToCart(element) {
         if (element == null) {
             alert("Invalid Selection");
             return;
         }
         else {
-            cart.push({ id: element.id, price: element.price, name: element.product, img: element.img })
-            console.log("Appended Cart : ", cart);
-            alert("Added Item to cart");
+            console.log("Sending data .....");
+            var dict = { id: element.id, price: element.price, name: element.product, img: element.img };
+            console.log(dict);
+            axios
+            .post('http://localhost:5000/postToCart',dict)
+            .then(()=>{console.log("Done dana done done")})
+            .catch(err=>{
+                console.log(err);
+            });
         }
+
     }
 
     render() {
         const menu = this.state.process.map((ele) => {
             return (
-                <div key={ele.id} className="col-12 col-md-3 m-2" style={{ float: 'left'}}>
-                    <Card style={{backgroundColor:'#114'}}>
+                <div key={ele.id} className="col-12 col-md-3 m-2" style={{ float: 'left' }}>
+                    <Card style={{ backgroundColor: '#114' }}>
 
-                        <CardImg style={{width:'auto',height:'40vh'}} src={ele.img} alt={ele.category} />
+                        <CardImg style={{ width: 'auto', height: '40vh' }} src={ele.img} alt={ele.category} />
 
-                        <CardTitle style={{fontSize: 3 + 'vh' ,color:'#ffd'}} >{ele.product}</CardTitle>
-                        <CardText style={{ marginLeft: '2vh',color:'#ffd' }}>
+                        <CardTitle style={{ fontSize: 3 + 'vh', color: '#ffd' }} >{ele.product}</CardTitle>
+                        <CardText style={{ marginLeft: '2vh', color: '#ffd' }}>
                             <p>{ele.details}</p>
-                            <p style={{fontSize:'3vh'}}><code>US$ {ele.price}</code></p>
-                            <p><a href={ele.url} style={{color:'#fff'}}>Buy Now</a>
-                                <button onClick={() => { this.addToCart(ele) }} style={{ marginLeft: '2vh' }}> Add to cart</button>
-                            </p>
+                            <p style={{ fontSize: '3vh' }}><code>US$ {ele.price}</code></p>
+                            <a href={ele.url} style={{ color: '#fff' }}>Buy Now</a>
+                            <button onClick={() => { this.addToCart(ele) }} style={{ marginLeft: '2vh' }}> Add to cart</button>
+                            
                         </CardText>
                     </Card>
                 </div>)
                 ;
         });
         return (
-            <div className="left-align container-fluid" style={{marginLeft:'10%',marginRight:'10%'}}>
+            <div className="left-align container-fluid" style={{ marginLeft: '10%', marginRight: '10%' }}>
                 <div >
                     {menu}
                 </div>
