@@ -1,0 +1,13 @@
+[
+    {
+        "name" : "/find/processors",
+        "queries" : ["processor", "intel","i%","%gen","%thgen","cpuchip","ryzen"],
+        "less" : ["cpu","alu","threads","core"]
+    },
+    {
+        "name":"/find/gpu",
+        "queries" : ["gpu","graphic","videocard","amd","nvidia","gtx","rtx"],
+        "less" : ["tpu","video","graphic","ti"]
+
+    }   
+]

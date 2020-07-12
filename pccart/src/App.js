@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import Table from './Table';
-import DisplayCart from './Cart'
-import { Route, BrowserRouter } from 'react-router-dom'
+import LoginForm from './Login.js';
+// import DisplayCart from './Cart'
+import { Route, BrowserRouter, Switch } from 'react-router-dom'
 import './App.css';
 import Mandatory from './Home.js';
 import Layout from './Layout';
 import Navigation from './Navigation';
 import ControlledCarousel from './Caro';
 import Idea from './idea';
+import SignUp from './Signup';
+import DisplayCart from './Cart.js';
+import FooterPage from './Footer';
 class App extends Component {
 
   state = {
@@ -22,7 +26,7 @@ class App extends Component {
   }
 
   callBackendAPI = async () => {
-    const response = await fetch('/express_backend');
+    const response = await fetch('192.168.0.105:5000/express_backend');
     const body = await response.json();
 
     if (response.status !== 200) {
@@ -31,29 +35,45 @@ class App extends Component {
     return body;
   };
 
+
+
   render() {
     return (
-      <React.Fragment className="App">
-        <Navigation />
+      <div>
+        <React.Fragment className="App" onUpdate={this.callBackendAPI}>
+          <Navigation />
+          {/* <p style={{ color: `white` }}>Welcome {localStorage.getItem('curr_user')}</p> */}
+          <div className="ml-0 pl-0">
+            <Mandatory />
+            <BrowserRouter>
+              <Route exact path="/" >
+                <ControlledCarousel />
+                <Layout >
+                  <h2 style={{ marginTop: '10vh', textAlign: `center`, color: `#fff`, fontWeight: `bold` }}>Our Ideology</h2>
+                  <Idea style={{ color: `#fff`, fontSize: `2vh` }} />
+                </Layout>
+              </Route>
 
-        <div className="ml-0 pl-0">
-          <Mandatory />
+              <Route path="/login"><LoginForm object={this} /></Route>
+              <Route path="/cart"><DisplayCart /></Route>
+              <Route path="/signup"><SignUp /></Route>
+              <Route path="/find/processors"><Table index={0} style={{ marginLeft: '10vh', marginRight: '10vh' }} /></Route>
+              <Route path="/find/gpu"><Table index={1} style={{ marginLeft: '10vh', marginRight: '10vh' }} /></Route>
+              <Route path="/find/processors"><Table index={2} style={{ marginLeft: '10vh', marginRight: '10vh' }} /></Route>
+              <Route path="/show/mycart"><DisplayCart /></Route>
+            </BrowserRouter>
+
+          </div>
+        </React.Fragment>
+        <div style={{ marginTop: '20px' }}>
           <BrowserRouter>
-            <Route exact path="/" >
-              <ControlledCarousel />
-              <Layout >
-                <h2 style={{ marginTop: '10vh', textAlign: `center`, color: `#fff`, fontWeight: `bold` }}>Our Ideology</h2>
-                <Idea style={{ color: `#fff`, fontSize: `2vh` }} />
-              </Layout>
-            </Route>
-            <Route path="/find/processors"><Table index={0} style={{ marginLeft: '10vh', marginRight: '10vh' }} /></Route>
-            <Route path="/find/gpu"><Table index={1} style={{ marginLeft: '10vh', marginRight: '10vh' }} /></Route>
-            <Route path="/find/processors"><Table index={2} style={{ marginLeft: '10vh', marginRight: '10vh' }} /></Route>
-            <Route path="/show/mycart"><DisplayCart /></Route>
+            <Switch>
+              <Route path="/find"></Route>
+              <Route><FooterPage /></Route>
+            </Switch>
           </BrowserRouter>
-
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }

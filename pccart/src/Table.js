@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
-import cart from './CData';
-const fs = require('fs');
+// import cart from './CData';
+// const fs = require('fs');
 const code_index = []
 code_index.push(require('./processors.json'))
 code_index.push(require('./gpu.json'))
@@ -28,17 +28,22 @@ class Table extends Component {
             var dict = { id: element.id, price: element.price, name: element.product, img: element.img };
             console.log(dict);
             axios
-            .post('http://localhost:5000/postToCart',dict)
+            .post('http://192.168.0.105:5000/postToCart',dict)
             .then(()=>{console.log("Done dana done done")})
             .catch(err=>{
                 console.log(err);
             });
+            alert("Item added to cart.");
         }
 
     }
 
     render() {
         const menu = this.state.process.map((ele) => {
+            if(ele.price == 0) 
+            {
+                ele.price = 'NA';
+            }
             return (
                 <div key={ele.id} className="col-12 col-md-3 m-2" style={{ float: 'left' }}>
                     <Card style={{ backgroundColor: '#114' }}>

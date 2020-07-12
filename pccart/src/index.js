@@ -21,6 +21,8 @@ import App from './App';
 
 // ReactDOM.hydrate(<App />, document.getElementById('root'));
 
+sessionStorage.setItem('curr_user','Guest');  
+
 function f1() {
   return (
     ReactDOM.render(

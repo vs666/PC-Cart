@@ -1,0 +1,34 @@
+[
+    {
+        "name": "masterblaster",
+        "data": {
+            "price": 369,
+            "name": "intel i7 9th gen Processor",
+            "img": "https://i.ebayimg.com/images/g/FMkAAOSwlRZe4sV0/s-l500.jpg"
+        }
+    },
+    {
+        "name": "masterblaster",
+        "data": {
+            "price": 471,
+            "name": "intel i9 9th gen Processor",
+            "img": "https://i5.walmartimages.com/asr/01d4fa55-6e6d-417e-959d-ad87e1925dec_1.eb5f2547519e025a821b98e68a659c31.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"
+        }
+    },
+    {
+        "name": "masterblaster",
+        "data": {
+            "price": 471,
+            "name": "intel i9 9th gen Processor",
+            "img": "https://i5.walmartimages.com/asr/01d4fa55-6e6d-417e-959d-ad87e1925dec_1.eb5f2547519e025a821b98e68a659c31.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"
+        }
+    },
+    {
+        "name": "masterblaster",
+        "data": {
+            "price": 164,
+            "name": "intel i5 9th gen Processor",
+            "img": "//i5.walmartimages.com/asr/532ff33c-fcde-4ee4-97cc-6c68e789a8b2_1.34551d674edab4857e46f5b6010f6a72.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"
+        }
+    }
+]
