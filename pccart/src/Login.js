@@ -33,18 +33,17 @@ export default class Login extends Component {
                     alert("Login failed because : " + response.data.reason);
                 }
                 else {
-                    alert("Login Successful.");
-                    console.log(localStorage.getItem('curr_user'))
-                    localStorage.setItem('curr_user',email.toString());
-                    console.log(localStorage.getItem('curr_user'));
-                    // window.location.href = 'localhost:3000/'; // add the website url here
+                    alert("Login Successful.\n"+response.data.authenticationHash);
+
+                    sessionStorage.setItem('hash',response.data.authenticationHash);
+
                 }
             })
             .catch(err => {
                 console.log(err);
             });
  
-        console.log(email, pass);//, errors);
+        console.log(email, pass);
     }
  
     handleChange = (event) => {
@@ -52,11 +51,7 @@ export default class Login extends Component {
         const field =  target.name;
         const value = target.value
  
-        // const errors = runValidationRules(target, this.state.errors);
  
-        // this.setState({
-        //     errors: errors
-        // });
  
         this.setState({
             [field]:  value

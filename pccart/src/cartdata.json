@@ -1,1 +1,74 @@
-[{"name":"masterblaster","data":{"price":369,"name":"intel i7 9th gen Processor","img":"https://i.ebayimg.com/images/g/FMkAAOSwlRZe4sV0/s-l500.jpg"}},{"name":"masterblaster","data":{"price":471,"name":"intel i9 9th gen Processor","img":"https://i5.walmartimages.com/asr/01d4fa55-6e6d-417e-959d-ad87e1925dec_1.eb5f2547519e025a821b98e68a659c31.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"}},{"name":"abc","data":{"price":369,"name":"intel i7 9th gen Processor","img":"https://i.ebayimg.com/images/g/FMkAAOSwlRZe4sV0/s-l500.jpg"}},{"name":"tesla","data":{"price":164,"name":"intel i5 9th gen Processor","img":"//i5.walmartimages.com/asr/532ff33c-fcde-4ee4-97cc-6c68e789a8b2_1.34551d674edab4857e46f5b6010f6a72.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"}},{"name":"tesla","data":{"price":164,"name":"intel i5 9th gen Processor","img":"//i5.walmartimages.com/asr/532ff33c-fcde-4ee4-97cc-6c68e789a8b2_1.34551d674edab4857e46f5b6010f6a72.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"}},{"name":"abc","data":{"price":369,"name":"intel i7 9th gen Processor","img":"https://i.ebayimg.com/images/g/FMkAAOSwlRZe4sV0/s-l500.jpg"}},{"name":"tesla","data":{"price":369,"name":"intel i7 9th gen Processor","img":"https://i.ebayimg.com/images/g/FMkAAOSwlRZe4sV0/s-l500.jpg"}},{"name":"tesla","data":{"price":164,"name":"intel i5 9th gen Processor","img":"//i5.walmartimages.com/asr/532ff33c-fcde-4ee4-97cc-6c68e789a8b2_1.34551d674edab4857e46f5b6010f6a72.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"}},{"name":"tesla","data":{"price":471,"name":"intel i9 9th gen Processor","img":"https://i5.walmartimages.com/asr/01d4fa55-6e6d-417e-959d-ad87e1925dec_1.eb5f2547519e025a821b98e68a659c31.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"}},{"name":"GUEST","data":{"id":"i7-9700K","price":369.99,"name":"intel i7 9th gen Processor","img":"https://i.ebayimg.com/images/g/FMkAAOSwlRZe4sV0/s-l500.jpg"}},{"name":"GUEST","data":{"price":164,"name":"intel i5 9th gen Processor","img":"//i5.walmartimages.com/asr/532ff33c-fcde-4ee4-97cc-6c68e789a8b2_1.34551d674edab4857e46f5b6010f6a72.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"}},{"name":"GUEST","data":{"price":"NA","name":"Nvidia RTX 2080Ti","img":"https://i.ebayimg.com/images/g/2ikAAOSwUAVeTI6F/s-l300.jpg"}}]
+[
+    {
+        "username": "abc",
+        "data": {
+            "hashData": "dd130a849d7b29e5541b05d2f7f86a4acd4f1ec598c1c9438783f56bc4f0ff80",
+            "price": 369,
+            "name": "intel i7 9th gen Processor",
+            "img": "https://i.ebayimg.com/images/g/FMkAAOSwlRZe4sV0/s-l500.jpg"
+        }
+    },
+    {
+        "username": "abc",
+        "data": {
+            "hashData": "dd130a849d7b29e5541b05d2f7f86a4acd4f1ec598c1c9438783f56bc4f0ff80",
+            "price": 369,
+            "name": "intel i7 9th gen Processor",
+            "img": "https://i.ebayimg.com/images/g/FMkAAOSwlRZe4sV0/s-l500.jpg"
+        }
+    },
+    {
+        "username": "abc",
+        "data": {
+            "hashData": "dd130a849d7b29e5541b05d2f7f86a4acd4f1ec598c1c9438783f56bc4f0ff80",
+            "price": 471,
+            "name": "intel i9 9th gen Processor",
+            "img": "https://i5.walmartimages.com/asr/01d4fa55-6e6d-417e-959d-ad87e1925dec_1.eb5f2547519e025a821b98e68a659c31.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"
+        }
+    },
+    {
+        "username": "tesla",
+        "data": {
+            "hashData": "ac43684091c04a2ec5b9cd6cb28ea07a4fa15e7b2cd48dc7286ae64ec5c406c5",
+            "price": 164,
+            "name": "intel i5 9th gen Processor",
+            "img": "//i5.walmartimages.com/asr/532ff33c-fcde-4ee4-97cc-6c68e789a8b2_1.34551d674edab4857e46f5b6010f6a72.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"
+        }
+    },
+    {
+        "username": "abc",
+        "data": {
+            "hashData": "dd130a849d7b29e5541b05d2f7f86a4acd4f1ec598c1c9438783f56bc4f0ff80",
+            "price": "NA",
+            "name": "Nvidia Tesla T4",
+            "img": "https://i.ebayimg.com/images/g/Ev0AAOSwuDte59gV/s-l300.jpg"
+        }
+    },
+    {
+        "username": "tesla",
+        "data": {
+            "hashData": "ac43684091c04a2ec5b9cd6cb28ea07a4fa15e7b2cd48dc7286ae64ec5c406c5",
+            "price": 369,
+            "name": "intel i7 9th gen Processor",
+            "img": "https://i.ebayimg.com/images/g/FMkAAOSwlRZe4sV0/s-l500.jpg"
+        }
+    },
+    {
+        "username": "abc",
+        "data": {
+            "hashData": "dd130a849d7b29e5541b05d2f7f86a4acd4f1ec598c1c9438783f56bc4f0ff80",
+            "price": 239,
+            "name": "Nvidia GTX 1060",
+            "img": "//i5.walmartimages.com/asr/d287b1a5-6a9a-40a0-b18e-85793063b922.600f64c6f5c014e40a118a7cf0b566f5.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"
+        }
+    },
+    {
+        "username": "abc",
+        "data": {
+            "hashData": "dd130a849d7b29e5541b05d2f7f86a4acd4f1ec598c1c9438783f56bc4f0ff80",
+            "price": "NA",
+            "name": "Nvidia RTX 2080Ti",
+            "img": "https://i.ebayimg.com/images/g/2ikAAOSwUAVeTI6F/s-l300.jpg"
+        }
+    }
+]

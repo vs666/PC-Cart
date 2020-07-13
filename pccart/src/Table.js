@@ -23,16 +23,19 @@ class Table extends Component {
             alert("Invalid Selection");
             return;
         }
+        else if (sessionStorage.getItem('hash') == null) {
+            alert("Please sign in first.");
+        }
         else {
             console.log("Sending data .....");
-            var dict = { id: element.id, price: element.price, name: element.product, img: element.img };
+            var dict = { hashData: sessionStorage.getItem('hash').toString(), id: element.id, price: element.price, name: element.product, img: element.img };
             console.log(dict);
             axios
-            .post('http://192.168.0.105:5000/postToCart',dict)
-            .then(()=>{console.log("Done dana done done")})
-            .catch(err=>{
-                console.log(err);
-            });
+                .post('http://192.168.0.105:5000/postToCart', dict)
+                .then(() => { console.log("Done dana done done") })
+                .catch(err => {
+                    console.log(err);
+                });
             alert("Item added to cart.");
         }
 
@@ -40,8 +43,7 @@ class Table extends Component {
 
     render() {
         const menu = this.state.process.map((ele) => {
-            if(ele.price == 0) 
-            {
+            if (ele.price == 0) {
                 ele.price = 'NA';
             }
             return (
@@ -56,7 +58,7 @@ class Table extends Component {
                             <p style={{ fontSize: '3vh' }}><code>US$ {ele.price}</code></p>
                             <a href={ele.url} style={{ color: '#fff' }}>Buy Now</a>
                             <button onClick={() => { this.addToCart(ele) }} style={{ marginLeft: '2vh' }}> Add to cart</button>
-                            
+
                         </CardText>
                     </Card>
                 </div>)
