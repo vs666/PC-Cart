@@ -58,7 +58,7 @@ class App extends Component {
               <Route path="/signup"><SignUp /></Route>
               <Route path="/find/processors"><Table index={0} style={{ marginLeft: '10vh', marginRight: '10vh' }} /></Route>
               <Route path="/find/gpu"><Table index={1} style={{ marginLeft: '10vh', marginRight: '10vh' }} /></Route>
-              <Route path="/find/processors"><Table index={2} style={{ marginLeft: '10vh', marginRight: '10vh' }} /></Route>
+              <Route path="/find/keyboards"><Table index={2} style={{ marginLeft: '10vh', marginRight: '10vh' }} /></Route>
               <Route path="/show/mycart"><DisplayCart /></Route>
             </BrowserRouter>
 

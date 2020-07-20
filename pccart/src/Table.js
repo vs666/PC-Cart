@@ -6,7 +6,7 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 const code_index = []
 code_index.push(require('./processors.json'))
 code_index.push(require('./gpu.json'))
-code_index.push(require('./monitor.json'))
+code_index.push(require('./keyb.json'))
 
 class Table extends Component {
     constructor(props) {

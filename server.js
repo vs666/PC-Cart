@@ -32,7 +32,7 @@ app.post('/logout', (req, res) => {
     }
     else {
         users[req.body.hash].login = false;
-        res.send({log : "Success"})
+        res.send({ log: "Success" })
     }
 });
 
@@ -83,7 +83,11 @@ app.post('/loginTrial', (req, res) => {
 });
 
 app.post('/search', (req, res) => {
-    res.send({ url: sf(req.body.query) });
+    const ulink = sf(req.body.query);
+    if (ulink != null)
+        res.send({ url: ulink });
+    else
+        res.send({err:"Match not found"});
 });
 
 app.post('/createAccount', (req, res) => {

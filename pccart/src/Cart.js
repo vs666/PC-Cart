@@ -13,14 +13,16 @@ class DisplayCart extends Component {
 
     render() {
         const menu = cart.map((ele) => {
-            return <div key={ele.id} className="col-5 col-md-5 m-1">
-                <Card >
-                    <CardImg width="100%" src={ele.data.img} alt={ele.category} />
-                    <CardTitle style={{ fontSize: 3 + 'vh' }}>{ele.data.product}</CardTitle>
-                    <p>{ele.data.name}</p>
-                    <code>US$ {ele.data.price}</code>
-                </Card>
-            </div>
+            if (ele.data.hashData == sessionStorage.getItem('hash')) {
+                return <div key={ele.id} className="col-5 col-md-5 m-1">
+                    <Card >
+                        <CardImg width="100%" src={ele.data.img} alt={ele.category} />
+                        <CardTitle style={{ fontSize: 3 + 'vh' }}>{ele.data.product}</CardTitle>
+                        <p>{ele.data.name}</p>
+                        <code>US$ {ele.data.price}</code>
+                    </Card>
+                </div>
+            }
         });
         return (
             <div className="left-align container-fluid">

@@ -27,7 +27,7 @@ const logout = (event) => {
         .then((response) => {
             console.log("Point1.");
             console.log(response);
-            console.log(response.data.log);
+            alert(response.data.log);
             console.log("Point 2.")
             if (response.data.log == "Success") {
                 sessionStorage.removeItem('hash');
@@ -54,12 +54,12 @@ const Navigation = () => {
                     <Nav className="mr-auto" style={{ color: '#bbb' }}>
                         <Nav.Link href="/" style={{ color: '#bbb' }}>Home</Nav.Link>
                         <Nav.Link href="/signup" style={{ color: '#bbb' }}>Sign Up</Nav.Link>
-                        <Nav.Link onClick={logout} style={{ color: '#aaa' }}>Logout</Nav.Link>
                         <Nav.Link href="/login" style={{ color: '#aaa' }}>Login</Nav.Link>
+                        <Nav.Link onClick={logout} style={{ color: '#aaa' }}>Logout</Nav.Link>
                         <NavDropdown title={"Options"} id="basic-nav-dropdown">
                             <NavDropdown.Item href="/find/processors">Processors</NavDropdown.Item>
                             <NavDropdown.Item href="/find/gpu" >Graphics Card</NavDropdown.Item>
-                            <NavDropdown.Item href="/find/monitors"> Display Screen</NavDropdown.Item>
+                            <NavDropdown.Item href="/find/keyboards"> Keyboards</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="/cart">My Cart</NavDropdown.Item>
                         </NavDropdown>

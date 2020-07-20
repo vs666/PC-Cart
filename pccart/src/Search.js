@@ -29,7 +29,7 @@ class SearchBar extends Component {
             .then((response) => {
                 console.log(response);
                 if (response.data.url == '///') {
-                    alert("Search failed because : ");
+                    alert("Search failed because : Match not found");
                 }
                 else {
                     window.location.href = response.data.url

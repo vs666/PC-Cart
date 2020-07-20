@@ -8,6 +8,10 @@
         "name":"/find/gpu",
         "queries" : ["gpu","graphic","videocard","amd","nvidia","gtx","rtx"],
         "less" : ["tpu","video","graphic","ti"]
-
-    }   
+    },
+    {
+        "name" : "/find/keyboards",
+        "queries" : ["keyboard", "typeboard","typer"],
+        "less" : ["type","qwerty","membrane","mechanical","gaming","backlit","typewriter"]
+    }
 ]
