@@ -4,9 +4,9 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 // import cart from './CData';
 // const fs = require('fs');
 const code_index = []
-code_index.push(require('./processors.json'))
-code_index.push(require('./gpu.json'))
-code_index.push(require('./keyb.json'))
+code_index.push(require('./../../scrapper/processors.json'))
+code_index.push(require('./../../scrapper/gpu.json'))
+code_index.push(require('./../../scrapper/keyb.json'))
 
 class Table extends Component {
     constructor(props) {

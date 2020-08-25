@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import Table from './Table';
-import LoginForm from './Login.js';
+import Table from './Components/Tables/Table';
+import LoginForm from './Components/Forms/Login.js';
 // import DisplayCart from './Cart'
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
 import './App.css';
-import Mandatory from './Home.js';
-import Layout from './Layout';
-import Navigation from './Navigation';
-import ControlledCarousel from './Caro';
-import Idea from './idea';
-import SignUp from './Signup';
-import DisplayCart from './Cart.js';
-import FooterPage from './Footer';
+import Mandatory from './Components/Home/Home.js';
+import Layout from './Components/Layout/Layout.js';
+import Navigation from './Components/NavigationBar/Navigation';
+import ControlledCarousel from './Components/Carousel/Caro';
+import Idea from './Components/Idea/idea';
+import SignUp from './Components/Signup/Signup.js';
+import DisplayCart from './Components/Cart/Cart.js';
+import FooterPage from './Components/Footer/Footer';
 class App extends Component {
 
   state = {

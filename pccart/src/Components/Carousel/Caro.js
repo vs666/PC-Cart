@@ -3,11 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import styled from 'styled-components';
 
 function ControlledCarousel() {
-    // const [index, setIndex] = useState(0);
 
-    // const handleSelect = (selectedIndex, e) => {
-    //     setIndex(selectedIndex);
-    // };
     const sstyle = styled.div`
         .img{
             width : 100%;
@@ -21,7 +17,7 @@ function ControlledCarousel() {
             <Carousel.Item >
                 <img style={{ width: '100%', height: '500px' }}
                     className="d-block w-100 img"
-                    src={require('./Bck1.jpg')}
+                    src={require('./../../images/Bck1.jpg')}
                     alt="First slide"
                 />
                 <Carousel.Caption >
@@ -33,7 +29,7 @@ function ControlledCarousel() {
                 <img
                     style={{ width: '100%', height: '500px' }}
                     className="d-block w-100 img"
-                    src={require('./SlideImg2.jpg')}
+                    src={require('./../../images/SlideImg2.jpg')}
                     alt="Second slide"
                 />
 
@@ -46,7 +42,7 @@ function ControlledCarousel() {
                 <img
                     style={{ width:'100%', height:'500px'}}
                     className="d-block w-100 img"
-                    src={require('./Bck3.jpg')}
+                    src={require('./../../images/Bck3.jpg')}
                     alt="Third slide"
                 />
 

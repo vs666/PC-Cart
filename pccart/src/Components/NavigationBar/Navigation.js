@@ -2,7 +2,7 @@ import React from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import styled from 'styled-components';
 import './Nav.css';
-import SearchBar from './Search';
+import SearchBar from './../../Features/Search/Search.js';
 import axios from 'axios';
 const Styles = styled.div`
     .navbar {
@@ -48,7 +48,7 @@ const Navigation = () => {
     return (
         <Styles>
             <Navbar raised={true} expand="lg" className="navbar a">
-                <Navbar.Brand href="/"><img src={require("./logo.png")} alt="PC-Cart" height="64" width="64" /></Navbar.Brand>
+                <Navbar.Brand href="/"><img src={require("./../../images/logo.png")} alt="PC-Cart" height="64" width="64" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar -nav" className="navbar a">
                     <Nav className="mr-auto" style={{ color: '#bbb' }}>

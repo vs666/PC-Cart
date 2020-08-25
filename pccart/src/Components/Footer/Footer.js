@@ -30,7 +30,7 @@ const FooterPage = () => {
                             </p>
                         </MDBCol>
                         <MDBCol md="4" style={{paddingLeft:'19vh'}}>
-                            <img src={require("./logo.png")} alt="PC-Cart" height="200em" width="200em" />
+                            <img src={require("./../../images/logo.png")} alt="PC-Cart" height="200em" width="200em" />
                         </MDBCol>
                         <MDBCol className="listing" md="4">
                             <h5 className="title">Categories</h5>

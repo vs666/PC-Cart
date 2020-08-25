@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
-import cart from './cartdata.json';
+import cart from './../../Database/cartdata.json';
 
 class DisplayCart extends Component {
     constructor(props) {
